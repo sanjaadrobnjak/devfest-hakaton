@@ -1,0 +1,35 @@
+
+
+<section id="provide-page">
+    
+    <div class="container">
+        <div class="provide-content-container">
+            <div class="welcome-message">
+                <h3>Provide a service</h3>
+            </div>
+  
+            <div class="service-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">SERVICES</th> <!-- Header spans two columns -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(s of allServices; track s){
+                        <tr>
+                            <td>{{s.name}}</td>
+                            <td class="button-cell"><button (click)="chooseService(s.id)">Choose</button></td>
+                        </tr>
+                        }
+                        <div class="button-container">
+                            <button (click)="goBack()">Go back</button>
+                        </div>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</section>

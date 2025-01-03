@@ -1,0 +1,18 @@
+<section id="senior-page">
+    <!-- Logout Button in the Far Left Corner -->
+    <button class="logout-btn" (click)="logout()">Logout</button>
+    
+    <div class="container">
+        <div class="senior-content-container">
+            <div class="welcome-message">
+                <h3>Welcome back, {{usrname}}!</h3>
+            </div>
+  
+            <div class="button-container">
+                <button class="bigbtn" (click)="requestAService()">Request a service</button>
+                <button class="smallbtn" (click)="viewProfile()">My profile</button>
+                <button class="smallbtn" (click)="settings()">Settings and manual</button>
+            </div>
+        </div>
+    </div>
+</section>

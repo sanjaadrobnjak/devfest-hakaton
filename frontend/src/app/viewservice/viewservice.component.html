@@ -1,0 +1,45 @@
+<section id="viewservice-page">
+    <div class="container">
+        <div class="viewservice-content-container">
+            <h1>Service Description</h1>
+
+            <table>
+                <tr>
+                    <td>Senior's Username</td>
+                    <td>{{seniorUsername}}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>{{description}}</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>{{address}}</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>{{price}}$</td>
+                </tr>
+                <tr>
+                    <td>Name of the Service</td>
+                    <td>{{name}}</td>
+                </tr>
+                <tr>
+                    <td>Helper's Username</td>
+                    <td>{{helperUsername}}</td>
+                </tr>
+            </table>
+
+            <div class="button-container">
+                @if(!accepted){
+                    <button (click)="acceptService()">Accept</button>
+                    <br><br>
+                }
+                @if(isme){
+                    <button (click)="finishService()">Finish</button> <br><br>
+                }
+                <button (click)="back()">Go back</button>
+            </div>
+        </div>
+    </div>
+</section>

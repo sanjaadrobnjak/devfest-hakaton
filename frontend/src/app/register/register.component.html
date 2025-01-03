@@ -1,0 +1,74 @@
+<section id="registration">
+    <div class="container">
+      <div class="registration-form-container">
+        <div class="section-header">
+          <h2>Registration</h2>
+        </div>
+        <form>
+          <table class="registration-table">
+            <tr>
+              <td><label for="firstname" class="textcolor">Firstname:</label></td>
+              <td><input type="text" id="firstname" [(ngModel)]="firstname" name="firstname" class="input-field" required></td>
+            </tr>
+            <tr>
+              <td><label for="lastname" class="textcolor">Lastname:</label></td>
+              <td><input type="text" id="lastname" [(ngModel)]="lastname" name="lastname" class="input-field" required></td>
+            </tr>
+            <tr>
+              <td><label for="username" class="textcolor">Username:</label></td>
+              <td><input type="text" id="username" [(ngModel)]="username" name="username" class="input-field" required></td>
+            </tr>
+            <tr>
+              <td><label for="password" class="textcolor">Password:</label></td>
+              <td><input type="password" id="password" [(ngModel)]="password" name="password" class="input-field" required></td>
+            </tr>
+            <tr>
+              <td><label for="address" class="textcolor">Address:</label></td>
+              <td><input type="text" id="address" [(ngModel)]="address" name="address" class="input-field" required></td>
+            </tr>
+            <tr>
+              <td><label for="mail" class="textcolor">Mail:</label></td>
+              <td><input type="text" id="mail" [(ngModel)]="mail" name="mail" class="input-field" required></td>
+            </tr>
+            <tr>
+              <td><label for="type" class="textcolor">Type:</label></td>
+              <td>
+                <select [(ngModel)]="type" name="type" class="input-field">
+                  <option value="senior" selected>Senior</option>
+                  <option value="helper">Helper</option>
+                </select>
+              </td>
+            </tr>
+  
+            <!-- Conditional Subscription Field -->
+             @if(type=="senior"){
+                <tr>
+                    <td><label for="subscription" class="textcolor">Subscription:</label></td>
+                    <td>
+                      <select [(ngModel)]="subscription" name="subscription" class="input-field">
+                        <option value="yearly" selected>Yearly</option>
+                        <option value="monthly">Monthly</option>
+                      </select>
+                    </td>
+                  </tr>
+
+             }
+            
+  
+            <tr>
+              <td colspan="2">
+                <p class="error-message">{{message}}</p>
+              </td>
+            </tr>
+          </table>
+          
+          <button type="button" (click)="register()" class="btn">Sign up</button>
+          <div class="register-link">
+            <p class="textcolor">Already have an account?</p> <a href="login" class="btn-link">Login now</a>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </section>
+  

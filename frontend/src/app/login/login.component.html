@@ -1,0 +1,27 @@
+<section id="login">
+  <div class="container">
+    <div class="login-form-container">
+      <div class="section-header">
+        <h2>Login</h2>
+      </div>
+      <form>
+        <table class="login-table">
+          <tr>
+            <td><label class="textcolor">Username:</label></td>
+            <td><input type="text" [(ngModel)]="username" class="input-field" name="username"></td>
+          </tr>
+          <tr>
+            <td><label class="textcolor">Password:</label></td>
+            <td><input type="password" [(ngModel)]="password" class="input-field" name="password"></td>
+          </tr>
+        </table>
+        <br>
+        <span class="error-message">{{error}}</span> <br>
+        <button type="button" (click)="login()" class="btn">Login</button>
+        <div class="register-link">
+          <p class="textcolor">Don't have an account?</p> <a href="register" class="btn-link">Register now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

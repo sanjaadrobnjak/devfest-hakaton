@@ -1,0 +1,152 @@
+/* General styles */
+section {
+    background-image: url('/img/background.jpg');
+}
+
+/* Provide Service Page Section */
+#provide-page {
+    padding: 50px 0;
+    background-color: rgba(0, 51, 102, 0.7); /* Darker blue background with transparency */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background fixed during scrolling */
+}
+
+/* Container for the sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Center the content container */
+.provide-content-container {
+    max-width: 800px; /* Set a max width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    background-color: #fff; /* White background for the content */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Section header */
+#provide-page .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#provide-page .section-header h2 {
+    font-size: 36px;
+    color: #003366; /* Darker blue for better contrast */
+}
+
+/* Welcome message and buttons */
+.welcome-message {
+    font-size: 18px;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light grey on hover */
+}
+
+/* Align the "Choose" button to the far right */
+.button-cell {
+    text-align: right; /* Aligns the content of the cell to the right */
+}
+
+button {
+    padding:  12px 20px;
+    background-color: #1e90ff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+}
+
+/* Center the buttons within the container */
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Small button (Logout) */
+.logout-btn {
+    margin-top: 0px;
+    width: 100px; /* Smaller width */
+    background-color: #4682b4; /* Change color */
+}
+
+/* Larger button class (for other buttons) */
+.smallbtn {
+    width: 200px; /* Adjust size of small button */
+}
+
+.bigbtn {
+    width: 100%; /* Adjust size of small button */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+}
+
+/* Logout message */
+.logout-message {
+    font-size: 20px;
+    color: #003366;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button container */
+.button-container {
+    margin-top: 30px;
+    margin-left: 220px;
+    text-align: center; /* Center content horizontally */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (if needed) */
+}

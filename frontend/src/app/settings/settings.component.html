@@ -1,0 +1,68 @@
+<section id="settings-page">
+    <div class="container">
+        <div class="settings-content-container">
+            <div class="section-header">
+                <h2>Settings and manual</h2>
+            </div>
+
+            <h3>Change current password</h3>
+            <form>
+                <label for="password">New password:</label>
+                <input type="password" [(ngModel)]="password" name="password" required>
+                <br><br><br>
+                <button class="btn" (click)="changePassword()">Change password</button> <br><br>
+                
+                <!-- Information text section -->
+                <h3>Manual</h3>
+                @if(u.type=="senior"){
+                <div class="info-text">
+                    <p>The app works by communicating with Artificial Intelligence, which will help you create the request you need. Once the request is created, it will be forwarded to helpers near you.</p>
+                    <p>A helper capable of fulfilling the request will accept it, after which you can track its progress.</p>
+                    <p>The helper will then complete the required service as quickly as possible.</p>
+
+                    <h4>What services can I schedule?</h4>
+                    <ul>
+                        <li>Medication delivery</li>
+                        <li>Escort to a doctor or therapy session</li>
+                        <li>Cleaning services</li>
+                        <li>Grocery and essential items delivery</li>
+                        <li>Transportation to a specific destination</li>
+                        <li>and many more...</li>
+                    </ul>
+
+                    <p>If you have additional questions or need assistance, feel free to contact us via:</p>
+                    <p>Phone: +381 65 416 417 2</p>
+                    <p>Email: support&#64;senieroapp.com</p>
+                </div>
+                }
+                @if(u.type=="helper"){
+                    <div class="info-text">
+                        <p>Seniero is a mobile application that enables seniors to easily schedule various services they need and connect with you, the helper, who provides these services for a fee.</p>
+
+                        <p>The app works by allowing you to select services requested by seniors. Once you choose the service you wish to provide, you accept the request and are responsible for completing it successfully in the shortest possible time (unless otherwise specified).</p>
+
+                        <h4>What services can I provide?</h4>
+                        <ul>
+                            <li>Medication delivery</li>
+                            <li>Escort to a doctor or therapy session</li>
+                            <li>Cleaning services</li>
+                            <li>Grocery and essential items delivery</li>
+                            <li>Transportation to a specific destination</li>
+                            <li>and many more...</li>
+                        </ul>
+
+                        <p>If you have additional questions or need assistance, feel free to contact us via:</p>
+
+                        <p>Phone: +381 65 416 417 2</p>
+                        <p>Email: support&#64;senieroapp.com</p>
+                    </div>
+                    }
+                
+                <div class="button-container">
+                    <button class="backbtn" (click)="goBack()">Go back</button>
+                </div>
+                <p>{{message}}</p>
+            </form>
+        </div>
+    </div>
+</section>

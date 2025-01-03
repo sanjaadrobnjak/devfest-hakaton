@@ -1,0 +1,247 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/background.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background fixed during scrolling */
+    color: #333;
+  }
+  /* Navbar styles */
+  .navbar {
+    background-color: rgba(0, 51, 102, 0.7); /* Darker blue */
+    padding: 10px 20px; /* Adjust padding for a more compact navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: flex-end; /* Items will align to the right */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
+  }
+  
+  .navbar li {
+    margin-left: 20px;
+  }
+  
+  .navbar-logo {
+    margin-right: auto; /* This moves the logo to the far left */
+  }
+  
+  .navbar-logo img {
+    height: 40px; /* Adjust height of the image */
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px; /* Match the navbar padding to the links */
+    display: inline-block; /* Ensure padding works as intended */
+  }
+  
+  .navbar .btn {
+    padding: 8px 16px;
+    background-color: #1e90ff;
+    border-radius: 4px;
+  }
+  
+  .navbar a:hover {
+    color: #f0f8ff;
+  }
+  
+  .navbar .btn:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+  }
+  
+  
+  /* Container for the sections */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    padding-top: 80px; /* Offset for fixed navbar */
+  }
+  
+  /* Section header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 36px;
+    color: #003366; /* Darker blue for better contrast */
+  }
+  
+  .section-header p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Introduction Section */
+  #home {
+    padding: 50px 0;
+    background-color: rgba(230, 247, 255, 0.8); /* Light blue background with transparency */
+  }
+  
+  #home .section-header p {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  /* Image in Welcome Section */
+  .welcome-image {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .welcome-image img {
+    max-width: 100%; /* Ensures the image scales to fit the container */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: rgba(230, 247, 255, 0.8); /* Light blue background with transparency */
+    padding: 50px 0;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item h3 {
+    font-size: 24px;
+    color: #1e90ff;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Pricing Section */
+  #pricing {
+    padding: 50px 0;
+  }
+  
+  .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    width: 45%;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pricing-plan:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .pricing-plan h3 {
+    font-size: 24px;
+    color: #1e90ff; /* Blue color */
+    margin-bottom: 20px;
+  }
+  
+  .pricing-plan .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e90ff; /* Blue color */
+    margin-bottom: 10px;
+  }
+  
+  .pricing-plan .plan-duration {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-plan ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pricing-plan ul li {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .pricing-plan .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff; /* Blue button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .pricing-plan .btn:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+  }
+  
+  /* Framed Pricing Plan (Monthly and Yearly) */
+  .pricing-plan.framed {
+    border: 2px solid #1e90ff; /* Blue border */
+    background-color: #f0f8ff; /* Light blue background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-plan.featured {
+    border: 2px solid #1e90ff; /* Blue border */
+    background-color: #f0f8ff; /* Light blue background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); /* Highlighted plan */
+  }
+  
+  /* Login & Register Sections */
+  #login, #register {
+    padding: 50px 0;
+  }
+  
+  #login h2, #register h2 {
+    text-align: center;
+  }
+
+  
+  /* Smooth scroll effect */
+  html {
+    scroll-behavior: smooth; /* Smooth scroll */
+  }

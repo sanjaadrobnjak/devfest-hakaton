@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Your existing styles here */
+        body {
+            background-image: url('/img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .cont {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 400px;  /* Adjust the height as needed */
+            overflow-y: auto;   /* Make the chat container scrollable */
+            padding-right: 10px;
+        }
+
+        .message-group {
+            display: flex;
+            flex-direction: column;
+            max-width: 70%;
+        }
+
+        .message-group.sender {
+            align-self: flex-end;
+            text-align: right;
+        }
+
+        .message-group.receiver {
+            align-self: flex-start;
+        }
+
+        .sender-name {
+            font-size: 0.8em;
+            margin-bottom: 2px;
+            color: black;
+        }
+
+        .receiver .sender-name {
+            padding-left: 15px;
+        }
+
+        .sender .sender-name {
+            padding-right: 15px;
+        }
+
+        .message {
+            padding: 10px 15px;
+            border-radius: 20px;
+            position: relative;
+            word-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sender .message {
+            background: #0084ff;
+            color: white;
+            align-self: flex-end;
+        }
+
+        .receiver .message {
+            background: white;
+            color: black;
+        }
+
+        .message-text {
+            margin-bottom: 5px;
+        }
+
+        .time {
+            font-size: 0.7em;
+        }
+
+        .receiver .time {
+            color: #000000;
+            align-self: flex-start;
+        }
+
+        .sender .time {
+            color: #ffffff;
+            align-self: flex-end;
+        }
+
+        .header {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #4682b4; /* Darker blue on hover */
+        }
+
+        /* Button container */
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="header">
+            <h2>Chat-Bot Service</h2>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Hello, what kind of service do you need?</div>
+                    <span class="time">10:15</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">I need some medicine.</div>
+                    <span class="time">10:16</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Understood. Do you need to go to pick them up or do you need them to be delivered?</div>
+                    <span class="time">10:16</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">I just need them to be delivered.</div>
+                    <span class="time">10:17</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Excellent! Do you need a recipe for the medicine that you need?</div>
+                    <span class="time">10:17</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">No.</div>
+                    <span class="time">10:18</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Do you have a preferred pharmacy from which you usually get your medicine?</div>
+                    <span class="time">10:18</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">Pharmacy around the corner.</div>
+                    <span class="time">10:20</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Is that Pharmacy "Prima" near your residence?</div>
+                    <span class="time">10:20</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">Yes, around the corner.</div>
+                    <span class="time">10:22</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Which medicine do you need?</div>
+                    <span class="time">10:22</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">Just Vivace 10mg.</div>
+                    <span class="time">10:23</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">Excellent! The service will be provided shortly.</div>
+                    <span class="time">10:23</span>
+                </div>
+            </div>
+    
+            <div class="message-group sender">
+                <div class="sender-name">Linda</div>
+                <div class="message">
+                    <div class="message-text">Thank you.</div>
+                    <span class="time">10:24</span>
+                </div>
+            </div>
+    
+            <div class="message-group receiver">
+                <div class="sender-name">AI</div>
+                <div class="message">
+                    <div class="message-text">You are welcome!</div>
+                    <span class="time">10:24</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button (click)="goBack()">Go back</button>
+    </div>
+
+    <script>
+        // Function to scroll to the bottom when new messages are added
+        function scrollToBottom() {
+            const chatContainer = document.getElementById('chatContainer');
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Call the scrollToBottom function when the page is loaded
+        window.onload = scrollToBottom;
+    </script>
+
+</body>
+</html>

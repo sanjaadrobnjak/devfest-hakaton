@@ -1,0 +1,155 @@
+/* General styles */
+section {
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 50px 0;
+}
+
+/* Settings Page Section */
+#settings-page {
+    padding: 50px 0;
+    background-color: rgba(0, 51, 102, 0.7); /* Darker blue background with transparency */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background fixed during scrolling */
+}
+
+/* Container for the sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Center the content container */
+.settings-content-container {
+    max-width: 600px; /* Set a max width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    background-color: #fff; /* White background for the content */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Section header */
+#settings-page .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#settings-page .section-header h2 {
+    font-size: 36px;
+    color: #003366; /* Darker blue for better contrast */
+}
+
+/* Input Fields Styling */
+input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    margin-top: 5px;
+}
+
+input[type="password"]:focus {
+    border-color: #1e90ff; /* Blue border on focus */
+    outline: none;
+    background-color: #fff;
+}
+
+/* Buttons Styling */
+button.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #1e90ff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button.btn:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+}
+
+/* Error message */
+p {
+    text-align: center;
+    color: #003366; /* Same color as the header */
+    font-size: 16px;
+}
+
+h3{
+    color: #1e90ff;
+}
+
+/* Button container */
+.button-container {
+    margin-top: 30px;
+    margin-left: center;
+    text-align: center; /* Center content horizontally */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (if needed) */
+}
+
+.backbtn{
+    
+    display: block;
+    width: 120px;
+    padding: 12px 20px;
+    background-color: #1e90ff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Styling the information text section */
+.info-text {
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.info-text p {
+    line-height: 1.6; /* Space between lines for readability */
+    color: #333;
+}
+
+.info-text h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #003366;
+}
+
+.info-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.info-text ul li {
+    margin-bottom: 5px;
+}
+
+.info-text p:last-child {
+    margin-top: 10px;
+}
