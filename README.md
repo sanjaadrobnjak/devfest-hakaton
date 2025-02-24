@@ -1,7 +1,7 @@
 # AI-Based Solutions for UN Sustainable Development Goals
 
 ## Project Overview
-This project was developed as part of a collaborative effort by a team of four, focusing on AI-based solutions addressing the United Nations' Sustainable Development Goals (SDGs). The application leverages modern web technologies to provide meaningful insights and solutions for global challenges.
+This project was developed during the DevFest 2024 hackathon, organized by the Google Developer Group On Campus University of Belgrade as part of a collaborative effort by a team of four, focusing on AI-based solutions addressing the United Nations' Sustainable Development Goals (SDGs). The application leverages modern web technologies to provide meaningful insights and solutions for global challenges.
 
 ## Technologies Used
 - **Frontend:** Angular, HTML5, CSS, JavaScript
