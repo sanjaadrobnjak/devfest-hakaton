@@ -9,7 +9,11 @@ This project was developed during the DevFest 2024 hackathon, organized by the G
 - **Database:** MySQL
 
 ## Features
-- AI-driven analytics and decision-making support
-- Intuitive user interface built with Angular
-- Robust backend powered by Spring Boot
-- Secure and scalable data storage with MySQL
+- **User Roles:** Register as a Helper or Senior Citizen
+- **Profile Management:** View, edit, and customize user profiles
+- **AI-Powered Service Requests:** Seniors can request and choose services through AI-driven communication
+- **Service Overview:** Helpers can browse available service requests
+- **Service Execution:** Helpers can accept and complete requested services
+
+
+
